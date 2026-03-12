@@ -26,3 +26,8 @@ Static website starter for GitHub Pages.
 - Add live server version
 - Add Tebex/store URL
 - Add screenshots/media
+
+
+## Included media
+- Resource-pack weapon textures extracted from your uploaded firearms and katana packs
+- Website sections updated to feel more like a real Minecraft server landing page

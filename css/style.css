@@ -89,7 +89,7 @@ h1{font-family:Orbitron,sans-serif; font-size:clamp(2.5rem,7vw,4.8rem); line-hei
 .rule{display:grid; grid-template-columns:60px 1fr; gap:18px; padding:18px}
 @media (max-width: 920px){
   .hero{grid-template-columns:1fr}
-  .card-grid,.list-grid,.play-steps,.card-grid.two,.guns-showcase{grid-template-columns:1fr}
+  .card-grid,.list-grid,.play-steps,.card-grid.two,.guns-showcase,.arsenal-grid,.minecraft-proof-grid,.weapons-wall{grid-template-columns:1fr}
   .site-header{flex-direction:column; align-items:flex-start; gap:14px}
 }
 
@@ -132,4 +132,55 @@ h1{font-family:Orbitron,sans-serif; font-size:clamp(2.5rem,7vw,4.8rem); line-hei
 .gun-card p{
   color:var(--muted);
   line-height:1.65;
+}
+
+
+.arsenal-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.arsenal-card,.proof-card{
+  background:linear-gradient(180deg,var(--panel),var(--panel2));
+  border:1px solid var(--line);
+  border-radius:20px;
+  box-shadow:var(--shadow);
+  padding:22px;
+}
+.arsenal-card img,.weapons-wall img{
+  image-rendering: pixelated;
+}
+.arsenal-card img{
+  width:100%;
+  height:170px;
+  object-fit:contain;
+  display:block;
+  margin:0 auto 14px;
+  padding:12px;
+  background:rgba(255,255,255,.03);
+  border-radius:16px;
+}
+.arsenal-card p,.proof-card p{
+  color:var(--muted);
+  line-height:1.65;
+}
+.minecraft-proof-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.weapons-wall{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:16px;
+}
+.weapons-wall img{
+  width:100%;
+  height:120px;
+  object-fit:contain;
+  padding:14px;
+  background:linear-gradient(180deg,var(--panel),var(--panel2));
+  border:1px solid var(--line);
+  border-radius:18px;
+  box-shadow:var(--shadow);
 }
