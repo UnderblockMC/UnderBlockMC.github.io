@@ -89,6 +89,47 @@ h1{font-family:Orbitron,sans-serif; font-size:clamp(2.5rem,7vw,4.8rem); line-hei
 .rule{display:grid; grid-template-columns:60px 1fr; gap:18px; padding:18px}
 @media (max-width: 920px){
   .hero{grid-template-columns:1fr}
-  .card-grid,.list-grid,.play-steps,.card-grid.two{grid-template-columns:1fr}
+  .card-grid,.list-grid,.play-steps,.card-grid.two,.guns-showcase{grid-template-columns:1fr}
   .site-header{flex-direction:column; align-items:flex-start; gap:14px}
+}
+
+
+.footer-email{
+  color:var(--muted);
+  margin-top:8px;
+  font-size:.95rem;
+}
+
+.guns-showcase{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.gun-card{
+  background:linear-gradient(180deg,var(--panel),var(--panel2));
+  border:1px solid var(--line);
+  border-radius:20px;
+  box-shadow:var(--shadow);
+  padding:24px;
+  position:relative;
+  overflow:hidden;
+}
+.gun-card::after{
+  content:"";
+  position:absolute;
+  inset:auto -20% -35% auto;
+  width:180px;
+  height:180px;
+  background:radial-gradient(circle, rgba(255,75,75,.18), transparent 65%);
+  pointer-events:none;
+}
+.gun-visual{
+  font-size:2.2rem;
+  margin-bottom:12px;
+  filter:drop-shadow(0 0 12px rgba(0,199,255,.22));
+}
+.gun-card p{
+  color:var(--muted);
+  line-height:1.65;
 }
