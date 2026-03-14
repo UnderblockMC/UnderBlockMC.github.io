@@ -7,12 +7,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Orbitron:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="nav">
     <a class="brand" href="index.html">UNDERBLOCK<span>MC</span></a>
-    <nav class="nav">
+    <nav class="menu">
+      <a href="index.html">Home</a>
       <a href="features.html">Features</a>
       <a href="play.html" class="active">Play</a>
       <a href="rules.html">Rules</a>
@@ -20,54 +22,30 @@
     </nav>
   </header>
 
-  <main class="page">
+  <main class="shell page">
     <section class="page-hero">
-      <p class="eyebrow">Join the Server</p>
-      <h1>Connect in under a minute.</h1>
-      <p class="lead">Use the main IP below and make sure your version matches your server build.</p>
+      <h1>CONNECT TO THE SERVER</h1>
+      <p>Join the city and start building your empire.</p>
     </section>
 
-    <section class="join-box">
-      <div class="ip-box large">
-        <span>Main IP</span>
+    <div class="join-panel">
+      <div class="server-bar large">
+        <div class="status-dot"></div>
         <strong>play.underblockmc.com</strong>
         <button class="copy-btn" data-copy="play.underblockmc.com">Copy IP</button>
       </div>
 
-      <div class="play-steps">
-        <div class="step"><span>1</span><p>Open Minecraft Java Edition.</p></div>
-        <div class="step"><span>2</span><p>Click Multiplayer, then Add Server.</p></div>
-        <div class="step"><span>3</span><p>Paste <strong>play.underblockmc.com</strong> as the server address.</p></div>
-        <div class="step"><span>4</span><p>Join and start building your empire.</p></div>
+      <div class="steps">
+        <article class="info-card"><h3>1. Open Minecraft Java</h3><p>Use your matching game version for the server build.</p></article>
+        <article class="info-card"><h3>2. Add Server</h3><p>Go to Multiplayer and paste the server IP.</p></article>
+        <article class="info-card"><h3>3. Join the City</h3><p>Step into a small GTA-style map with gangs, police, ATMs, and custom weapons.</p></article>
       </div>
-    </section>
-
-    <section class="section alt">
-      <div class="card-grid two">
-        <article class="card">
-          <h3>Recommended Info</h3>
-          <p>Version: update this to your live Paper version.</p>
-          <p>Platform: Java Edition</p>
-        </article>
-        <article class="card">
-          <h3>Other Links</h3>
-          <p>Add your Discord invite here.</p>
-          <p>Add your store link here later.</p>
-        </article>
-      </div>
-    </section>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <div><strong>UnderBlockMC</strong><p class="footer-email">admin@underblockmc.com</p></div>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="features.html">Features</a>
-      <a href="rules.html">Rules</a>
-      <a href="store.html">Store</a>
-    </div>
+  <footer class="footer shell">
+    <div><strong>UnderBlockMC</strong><p class="email">admin@underblockmc.com</p></div>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>

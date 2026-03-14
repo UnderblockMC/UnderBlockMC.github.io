@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>UnderBlockMC — Crime City Minecraft Server</title>
-  <meta name="description" content="UnderBlockMC is a GTA-inspired Minecraft server with custom drugs, guns, gangs, bounties, police, ATMs, and district takeovers.">
+  <title>UnderBlockMC</title>
+  <meta name="description" content="UnderBlockMC is a Minecraft crime city server with custom guns, gangs, drugs, bounties, and police.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Orbitron:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="bg-grid"></div>
-  <header class="site-header">
+  <header class="nav">
     <a class="brand" href="index.html">UNDERBLOCK<span>MC</span></a>
-    <nav class="nav">
+    <nav class="menu">
+      <a href="index.html" class="active">Home</a>
       <a href="features.html">Features</a>
       <a href="play.html">Play</a>
       <a href="rules.html">Rules</a>
@@ -23,220 +24,84 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Minecraft Crime City</p>
-        <h1>The Minecraft crime server that actually looks armed.</h1>
-        <p class="lead">UnderBlockMC drops you into a small GTA-style city with real custom firearms, katanas, gang pressure, police heat, ATMs, drugs, and district warfare. This is not a generic SMP with a dark theme — it is a full crime sandbox.</p>
+    <section class="hero hero-home">
+      <img class="hero-image" src="img/hero-concept.png" alt="UnderBlockMC cinematic city combat scene">
+      <div class="hero-overlay"></div>
+      <div class="hero-content shell">
+        <div class="hero-topline">Crime City Minecraft Server</div>
+        <h1><span>RULE THE CITY.</span> BUILD YOUR EMPIRE.</h1>
+        <p class="hero-sub">Guns • Drugs • Gangs • Bounties • Police</p>
 
-        <div class="ip-box">
-          <span>Main IP</span>
-          <strong id="server-ip">play.underblockmc.com</strong>
+        <div class="server-bar">
+          <div class="status-dot"></div>
+          <strong>play.underblockmc.com</strong>
+          <span class="divider">|</span>
+          <span>Version: 1.21+</span>
           <button class="copy-btn" data-copy="play.underblockmc.com">Copy IP</button>
         </div>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="play.html">How to Join</a>
-          <a class="btn btn-secondary" href="features.html">See Features</a>
-        </div>
-
-        <ul class="status-row">
-          <li>Custom Drugs</li>
-          <li>Guns</li>
-          <li>Gang Wars</li>
-          <li>Bounties</li>
-          <li>Police Heat</li>
-        </ul>
-      </div>
-
-      <div class="hero-card">
-        <div class="panel">
-          <p class="panel-title">WANTED STATUS</p>
-          <div class="stars">★ ★ ★ ★ ★</div>
-          <p class="panel-sub">Lose the cops with distance, cover, and smart movement.</p>
-        </div>
-        <div class="panel">
-          <p class="panel-title">TOP FEATURES</p>
-          <ul class="feature-mini">
-            <li>District Takeovers</li>
-            <li>Drug Economy</li>
-            <li>ATM Robberies</li>
-            <li>Custom Weapons</li>
-            <li>Bounty Hunting</li>
-          </ul>
-        </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="section-head">
-        <p class="eyebrow">Core Gameplay</p>
-        <h2>Everything revolves around risk, money, and territory.</h2>
-      </div>
-
-      <div class="card-grid">
-        <article class="card">
-          <h3>💊 Drug Empire</h3>
-          <p>Run product, control labs, and sell through dealers in districts where prices and risk change constantly.</p>
+    <section class="section shell">
+      <h2 class="section-title">WHY PLAY UNDERBLOCK MC?</h2>
+      <div class="promo-grid">
+        <article class="promo-card">
+          <div class="promo-thumb thumb-atm"></div>
+          <h3>PLAYER-DRIVEN CRIME ECONOMY</h3>
         </article>
-        <article class="card">
-          <h3>🔫 Custom Guns</h3>
-          <p>Use custom weapons with your combat system for close-range fights, bounty hunts, and gang wars.</p>
+        <article class="promo-card">
+          <div class="promo-thumb thumb-district"></div>
+          <h3>DISTRICT CONTROL SYSTEM</h3>
         </article>
-        <article class="card">
-          <h3>🏙 District Control</h3>
-          <p>Fight for sections of the city and take ownership for bonuses, income, and better local market control.</p>
-        </article>
-        <article class="card">
-          <h3>👮 Heat & Police</h3>
-          <p>Crime raises your wanted level. If police see you, the pressure escalates. Hide long enough and lose them.</p>
-        </article>
-        <article class="card">
-          <h3>🎯 Bounties</h3>
-          <p>Players can place money on enemies. Take them out, claim their head, and redeem the reward.</p>
-        </article>
-        <article class="card">
-          <h3>🏦 ATMs & Robberies</h3>
-          <p>Use ATMs to move cash, but high-risk areas can turn every transaction into an ambush.</p>
+        <article class="promo-card">
+          <div class="promo-thumb thumb-guns"></div>
+          <h3>CUSTOM GUNS &amp; SWORDS</h3>
         </article>
       </div>
     </section>
 
-
-    <section class="section">
-      <div class="section-head">
-        <p class="eyebrow">Why Players Click</p>
-        <h2>Everything about the server is built to scream Minecraft crime city.</h2>
-      </div>
-
-      <div class="minecraft-proof-grid">
-        <article class="proof-card">
-          <h3>Small City Map</h3>
-          <p>Tight streets, alleys, rooftops, ATMs, and blocks that keep fights close and dangerous.</p>
+    <section class="section shell compact">
+      <div class="feature-strip">
+        <article class="strip-card">
+          <div class="strip-icon">💵</div>
+          <h4>Player-driven crime economy</h4>
         </article>
-        <article class="proof-card">
-          <h3>Visible Heat System</h3>
-          <p>Wanted stars, police response, and hiding mechanics turn every fight into a risk calculation.</p>
+        <article class="strip-card">
+          <div class="strip-icon">🏙️</div>
+          <h4>District control system</h4>
         </article>
-        <article class="proof-card">
-          <h3>Custom Asset Packs</h3>
-          <p>Your guns and katanas aren’t placeholders — they’re actual modeled content pulled from your packs.</p>
+        <article class="strip-card">
+          <div class="strip-icon">🔫</div>
+          <h4>Custom guns &amp; swords</h4>
         </article>
-      </div>
-    </section>
-
-    <section class="section alt">
-      <div class="section-head">
-        <p class="eyebrow">Why UnderBlockMC</p>
-        <h2>A Minecraft server built more like a crime sandbox than a vanilla world.</h2>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <span>01</span>
-          <div>
-            <h3>Make Money</h3>
-            <p>Sell product, win fights, complete risky city loops, and stack cash in your wallet and bank.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <span>02</span>
-          <div>
-            <h3>Take Territory</h3>
-            <p>Push gangs out of districts and claim stronger control over the city economy.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <span>03</span>
-          <div>
-            <h3>Survive the Heat</h3>
-            <p>Police respond to your violence. If you keep moving and break line of sight, you can still escape.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="section">
-      <div class="section-head">
-        <p class="eyebrow">Weapon Showcase</p>
-        <h2>Minecraft guns that make fights feel dangerous.</h2>
-      </div>
-
-      <div class="guns-showcase">
-        <article class="gun-card">
-          <div class="gun-visual">🔫</div>
-          <h3>Street Pistols</h3>
-          <p>Fast sidearms for drive-by style fights, bounty hunting, and close city engagements.</p>
+        <article class="strip-card">
+          <div class="strip-icon">👮</div>
+          <h4>NPC gangs and real police AI</h4>
         </article>
-        <article class="gun-card">
-          <div class="gun-visual">🧨</div>
-          <h3>SMGs & Uzis</h3>
-          <p>Light, aggressive weapons built for alley fights, ambushes, and gang pressure.</p>
-        </article>
-        <article class="gun-card">
-          <div class="gun-visual">🎯</div>
-          <h3>Rifles & Snipers</h3>
-          <p>Hold angles, control districts, and punish players trying to move product across the city.</p>
+        <article class="strip-card">
+          <div class="strip-icon">🎯</div>
+          <h4>Bounty hunting</h4>
         </article>
       </div>
     </section>
 
-
-    <section class="section alt">
-      <div class="section-head">
-        <p class="eyebrow">Real Server Weapons</p>
-        <h2>These are actual weapons from the resource packs running on the server.</h2>
-      </div>
-
-      <div class="arsenal-grid">
-        <article class="arsenal-card">
-          <img src="img/glock.png" alt="Glock">
-          <h3>Glock</h3>
-          <p>Clean sidearm for street pressure, bounty fights, and fast close-range duels.</p>
-        </article>
-        <article class="arsenal-card">
-          <img src="img/uzi.png" alt="Uzi">
-          <h3>Uzi</h3>
-          <p>Perfect for alley ambushes, drive-by style fights, and aggressive gang pushes.</p>
-        </article>
-        <article class="arsenal-card">
-          <img src="img/ak47.png" alt="AK-47">
-          <h3>AK-47</h3>
-          <p>The kind of rifle players expect in a city takeover — loud, dangerous, and iconic.</p>
-        </article>
-        <article class="arsenal-card">
-          <img src="img/m16.png" alt="M16">
-          <h3>M16</h3>
-          <p>Built for holding streets, angles, rooftops, and district control fights.</p>
-        </article>
-        <article class="arsenal-card">
-          <img src="img/awp.png" alt="AWP">
-          <h3>AWP</h3>
-          <p>Long-range control for players who want to own rooftops and punish movement.</p>
-        </article>
-        <article class="arsenal-card">
-          <img src="img/fire_katana.png" alt="Fire Katana">
-          <h3>Fire Katana</h3>
-          <p>Stylish melee pressure with custom visuals that instantly makes the server stand out.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section cta">
+    <section class="cta shell">
       <div class="cta-box">
-        <h2>Ready to own the city?</h2>
-        <p>Jump into UnderBlockMC and start building your name.</p>
-        <a class="btn btn-primary" href="play.html">Connect to the Server</a>
+        <h2>Join the city today.</h2>
+        <p>Small-map GTA-style action with custom weapons, heat, and district warfare.</p>
+        <div class="cta-actions">
+          <a class="btn primary" href="play.html">Play Now</a>
+          <a class="btn secondary" href="features.html">See Features</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer shell">
     <div>
       <strong>UnderBlockMC</strong>
       <p>Custom Drugs • Guns • Gangs • Bounties • Police</p>
-      <p class="footer-email">admin@underblockmc.com</p>
+      <p class="email">admin@underblockmc.com</p>
     </div>
     <div class="footer-links">
       <a href="features.html">Features</a>
