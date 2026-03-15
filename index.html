@@ -1,108 +1,126 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>UnderBlockMC</title>
-  <meta name="description" content="UnderBlockMC — custom vehicles, guns, bounties, gangs, and NPCs. play.underblockmc.net on Minecraft 1.21.10." />
+  <meta name="description" content="UnderBlockMC Minecraft server — custom weapons, vehicles, gangs, bounties, and NPCs. Join at play.underblockmc.net on 1.21.10." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-header wrap">
-      <div class="brand">UNDERBLOCKMC</div>
+  <header class="site-header">
+    <div class="wrap topbar">
+      <a class="brand" href="#top">UNDERBLOCKMC</a>
       <nav class="nav">
-        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#systems">Systems</a>
         <a href="#arsenal">Arsenal</a>
         <a href="#join">Join</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero wrap">
-        <div class="hero-copy">
-          <div class="eyebrow">Minecraft 1.21.10</div>
-          <h1>UnderBlockMC</h1>
-          <p class="lead">Custom vehicles, guns, bounties, gangs, and NPCs.</p>
-          <div class="server-box">
-            <span class="server-label">Server IP</span>
-            <button class="copy-ip" data-copy="play.underblockmc.net">play.underblockmc.net</button>
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow">Minecraft server</div>
+        <h1>Custom weapons, vehicles, gangs, bounties, and NPCs.</h1>
+        <p class="lead">UnderBlockMC is a modern crime-themed server built around PvP, progression, and custom content.</p>
+        <div class="hero-actions">
+          <div class="server-pill"><span>IP</span><strong>play.underblockmc.net</strong></div>
+          <div class="server-pill"><span>Version</span><strong>1.21.10</strong></div>
+        </div>
+      </div>
+      <aside class="status-card">
+        <h2>Server</h2>
+        <dl>
+          <div><dt>Focus</dt><dd>Combat / progression</dd></div>
+          <div><dt>Core systems</dt><dd>Weapons, vehicles, gangs, bounties, NPCs</dd></div>
+          <div><dt>Style</dt><dd>Modern / crime</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section id="about" class="section wrap split">
+      <div>
+        <h2>What players can expect</h2>
+        <p class="section-intro">The site keeps the copy short and lets the custom content do the work.</p>
+      </div>
+      <div class="feature-grid" id="systems">
+        <article class="feature-card">
+          <h3>Weapons</h3>
+          <p>Custom firearm and melee models loaded directly from the resource pack.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Vehicles</h3>
+          <p>Fast movement, getaway routes, and chase-heavy gameplay.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Gangs</h3>
+          <p>Form crews, control territory, and fight over the map.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Bounties</h3>
+          <p>Track targets and cash out on high-value kills.</p>
+        </article>
+        <article class="feature-card">
+          <h3>NPCs</h3>
+          <p>Missions and progression hooks that push players into the world.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Version</h3>
+          <p>Built for Minecraft 1.21.10.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="arsenal" class="section arsenal-section">
+      <div class="wrap arsenal-layout">
+        <div class="arsenal-sidebar">
+          <div>
+            <div class="eyebrow">Arsenal</div>
+            <h2>Weapon viewer</h2>
+            <p class="section-intro">This viewer loads your actual model JSON and PNG textures in the browser. No backend required.</p>
+          </div>
+
+          <div class="weapon-list" id="weaponList"></div>
+
+          <div class="weapon-meta card" id="weaponMeta">
+            <div class="meta-row"><span>Name</span><strong id="metaName">AK-47</strong></div>
+            <div class="meta-row"><span>Type</span><strong id="metaType">Assault rifle</strong></div>
+            <div class="meta-row"><span>Pack</span><strong id="metaPack">firearms</strong></div>
           </div>
         </div>
-        <div class="hero-panel">
-          <div class="hero-stat"><span>Mode</span><strong>Crime / PvP</strong></div>
-          <div class="hero-stat"><span>Systems</span><strong>Vehicles • Gangs • NPCs</strong></div>
-          <div class="hero-stat"><span>Weapons</span><strong>Custom models</strong></div>
-        </div>
-      </section>
 
-      <section id="features" class="wrap section">
-        <div class="section-head">
-          <h2>Features</h2>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card"><h3>Custom Guns</h3><p>Rifles, pistols, snipers, shotguns, and heavy weapons.</p></article>
-          <article class="feature-card"><h3>Vehicles</h3><p>Cars, bikes, and high-speed getaways.</p></article>
-          <article class="feature-card"><h3>Bounties</h3><p>Track targets and cash out contracts.</p></article>
-          <article class="feature-card"><h3>Gangs</h3><p>Run crews, hold territory, and fight rivals.</p></article>
-          <article class="feature-card"><h3>NPCs</h3><p>Mission givers, world interactions, and progression hooks.</p></article>
-          <article class="feature-card"><h3>Server Version</h3><p>Built for 1.21.10.</p></article>
-        </div>
-      </section>
-
-      <section id="arsenal" class="wrap section arsenal-layout">
-        <div>
-          <div class="section-head compact">
-            <h2>Arsenal</h2>
-            <p>Pick an item to preview.</p>
+        <div class="viewer-shell card">
+          <div class="viewer-topbar">
+            <span>3D Viewer</span>
+            <button id="resetView" type="button">Reset view</button>
           </div>
-          <div id="weapon-list" class="weapon-list"></div>
+          <div id="viewer"></div>
+          <div class="viewer-help">Drag to rotate • Scroll to zoom</div>
         </div>
-        <div class="viewer-card">
-          <div class="viewer-head">
-            <div>
-              <div class="viewer-kicker">3D Viewer</div>
-              <h3 id="viewer-title">AK-47</h3>
-            </div>
-            <div id="viewer-meta" class="viewer-meta">Assault Rifle</div>
-          </div>
-          <div id="viewer" class="viewer-canvas"></div>
-          <div id="viewer-status" class="viewer-status">Loading model…</div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="wrap section promo-grid">
-        <article class="promo-card">
-          <span class="promo-label">Vehicles</span>
-          <h3>Street chases</h3>
-        </article>
-        <article class="promo-card">
-          <span class="promo-label">Bounties</span>
-          <h3>Target hunts</h3>
-        </article>
-        <article class="promo-card">
-          <span class="promo-label">Gangs</span>
-          <h3>Turf wars</h3>
-        </article>
-      </section>
+    <section id="join" class="section wrap join-card">
+      <div>
+        <div class="eyebrow">Join</div>
+        <h2>Connect to the server</h2>
+      </div>
+      <div class="join-pill">play.underblockmc.net</div>
+    </section>
+  </main>
 
-      <section id="join" class="wrap section join-card">
-        <div>
-          <h2>Join now</h2>
-          <p>play.underblockmc.net</p>
-        </div>
-        <button class="copy-ip large" data-copy="play.underblockmc.net">Copy IP</button>
-      </section>
-    </main>
-
-    <footer class="site-footer wrap">
-      <div>Contact: admin@underblockmc.net</div>
-      <div>Not an official Minecraft service. Not approved by or associated with Mojang or Microsoft.</div>
-    </footer>
-  </div>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>Contact: admin@underblockmc.net</p>
+      <p>Not an official Minecraft service. Not approved by or associated with Mojang or Microsoft.</p>
+    </div>
+  </footer>
 
   <script type="module" src="app.js"></script>
 </body>
