@@ -1,0 +1,212 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "all": "minecraft:block/smithing_table"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        3
+      ],
+      "to": [
+        16,
+        32,
+        13
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "texture": "#all"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "texture": "#all"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            10,
+            32
+          ],
+          "texture": "#all"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            10,
+            32
+          ],
+          "texture": "#all"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            10
+          ],
+          "texture": "#all"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            10
+          ],
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "from": [
+        2,
+        20,
+        2
+      ],
+      "to": [
+        14,
+        30,
+        3
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2,
+            20,
+            14,
+            30
+          ],
+          "texture": "#all"
+        },
+        "south": {
+          "uv": [
+            2,
+            20,
+            14,
+            30
+          ],
+          "texture": "#all"
+        },
+        "west": {
+          "uv": [
+            2,
+            20,
+            3,
+            30
+          ],
+          "texture": "#all"
+        },
+        "east": {
+          "uv": [
+            2,
+            20,
+            3,
+            30
+          ],
+          "texture": "#all"
+        },
+        "up": {
+          "uv": [
+            2,
+            2,
+            14,
+            3
+          ],
+          "texture": "#all"
+        },
+        "down": {
+          "uv": [
+            2,
+            2,
+            14,
+            3
+          ],
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        0,
+        2
+      ],
+      "to": [
+        16,
+        2,
+        14
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            62,
+            16,
+            64
+          ],
+          "texture": "#all"
+        },
+        "south": {
+          "uv": [
+            0,
+            62,
+            16,
+            64
+          ],
+          "texture": "#all"
+        },
+        "west": {
+          "uv": [
+            0,
+            62,
+            12,
+            64
+          ],
+          "texture": "#all"
+        },
+        "east": {
+          "uv": [
+            0,
+            62,
+            12,
+            64
+          ],
+          "texture": "#all"
+        },
+        "up": {
+          "uv": [
+            0,
+            60,
+            16,
+            62
+          ],
+          "texture": "#all"
+        },
+        "down": {
+          "uv": [
+            0,
+            60,
+            16,
+            62
+          ],
+          "texture": "#all"
+        }
+      }
+    }
+  ]
+}
