@@ -3,176 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UnderBlockMC — Custom Guns, Vehicles, Gangs & Bounties</title>
-  <meta name="description" content="Join UnderBlockMC at play.underblockmc.net. A cinematic Minecraft 1.21.10 server with custom guns, vehicles, bounties, gangs, NPCs, and legendary weapons." />
-  <meta property="og:title" content="UnderBlockMC" />
-  <meta property="og:description" content="Custom guns, vehicles, bounties, gangs, NPCs, and cinematic combat. Join at play.underblockmc.net" />
-  <meta property="og:image" content="images/underblock-hero.png" />
-  <meta name="theme-color" content="#0c0f17" />
-  <link rel="icon" type="image/png" href="images/underblock-icon.png" />
+  <title>UnderBlockMC</title>
+  <meta name="description" content="UnderBlockMC — custom vehicles, guns, bounties, gangs, and NPCs. play.underblockmc.net on Minecraft 1.21.10." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="bg-orb orb-1"></div>
-  <div class="bg-orb orb-2"></div>
+  <div class="page-shell">
+    <header class="site-header wrap">
+      <div class="brand">UNDERBLOCKMC</div>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#arsenal">Arsenal</a>
+        <a href="#join">Join</a>
+      </nav>
+    </header>
 
-  <header class="site-header">
-    <div class="brand">
-      <img src="images/underblock-icon.png" alt="UnderBlockMC icon" />
-      <span>UNDERBLOCKMC</span>
-    </div>
-    <nav class="nav">
-      <a href="#features">Features</a>
-      <a href="#arsenal">Arsenal</a>
-      <a href="#action">Action</a>
-      <a href="#join">Join</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <img class="hero-image" src="images/underblock-hero.png" alt="UnderBlockMC cinematic server art" />
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <div class="eyebrow-row">
-          <span class="pill pill-orange">Crime • Combat • Survival</span>
-          <span class="pill">Minecraft 1.21.10</span>
+    <main>
+      <section class="hero wrap">
+        <div class="hero-copy">
+          <div class="eyebrow">Minecraft 1.21.10</div>
+          <h1>UnderBlockMC</h1>
+          <p class="lead">Custom vehicles, guns, bounties, gangs, and NPCs.</p>
+          <div class="server-box">
+            <span class="server-label">Server IP</span>
+            <button class="copy-ip" data-copy="play.underblockmc.net">play.underblockmc.net</button>
+          </div>
         </div>
-        <h1>Rule the <span>underworld</span> in Minecraft.</h1>
-        <p>
-          UnderBlockMC is a cinematic Minecraft server with custom vehicles, guns, bounties, gangs, NPC missions, and a full city-crime atmosphere built for action.
-        </p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#join">Join: play.underblockmc.net</a>
-          <a class="btn btn-secondary" href="#arsenal">View Arsenal</a>
+        <div class="hero-panel">
+          <div class="hero-stat"><span>Mode</span><strong>Crime / PvP</strong></div>
+          <div class="hero-stat"><span>Systems</span><strong>Vehicles • Gangs • NPCs</strong></div>
+          <div class="hero-stat"><span>Weapons</span><strong>Custom models</strong></div>
         </div>
-        <div class="stats">
-          <div class="stat"><strong>25+</strong><span>Weapon Classes</span></div>
-          <div class="stat"><strong>5</strong><span>Core Systems</span></div>
-          <div class="stat"><strong>Modern Crime</strong><span>Server Theme</span></div>
-          <div class="stat"><strong>PvP + RP</strong><span>Play Style</span></div>
+      </section>
+
+      <section id="features" class="wrap section">
+        <div class="section-head">
+          <h2>Features</h2>
         </div>
-      </div>
-    </section>
+        <div class="feature-grid">
+          <article class="feature-card"><h3>Custom Guns</h3><p>Rifles, pistols, snipers, shotguns, and heavy weapons.</p></article>
+          <article class="feature-card"><h3>Vehicles</h3><p>Cars, bikes, and high-speed getaways.</p></article>
+          <article class="feature-card"><h3>Bounties</h3><p>Track targets and cash out contracts.</p></article>
+          <article class="feature-card"><h3>Gangs</h3><p>Run crews, hold territory, and fight rivals.</p></article>
+          <article class="feature-card"><h3>NPCs</h3><p>Mission givers, world interactions, and progression hooks.</p></article>
+          <article class="feature-card"><h3>Server Version</h3><p>Built for 1.21.10.</p></article>
+        </div>
+      </section>
 
-    <section id="features" class="section">
-      <div class="section-heading">
-        <p>Server Highlights</p>
-        <h2>Everything players need to know in one hit.</h2>
-      </div>
-      <div class="feature-grid">
-        <article class="card">
-          <h3>Custom Guns</h3>
-          <p>Assault rifles, snipers, pistols, shotguns, RPGs, and more using real custom resource-pack models.</p>
-        </article>
-        <article class="card">
-          <h3>Vehicles</h3>
-          <p>Street races, fast escapes, convoys, and high-speed pursuits across the city.</p>
-        </article>
-        <article class="card">
-          <h3>Bounties</h3>
-          <p>Track high-value players, collect rewards, and become the hunter everyone fears.</p>
-        </article>
-        <article class="card">
-          <h3>Gangs</h3>
-          <p>Form alliances, defend territory, and build a criminal empire with your crew.</p>
-        </article>
-        <article class="card">
-          <h3>NPC Missions</h3>
-          <p>Pick up contracts, take on dangerous jobs, and push your progression through custom encounters.</p>
-        </article>
-        <article class="card">
-          <h3>Legendary Katanas</h3>
-          <p>Rare elemental blades like Fire Katana and Cosmic Katana with unique visual style and prestige.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="arsenal" class="section section-dark">
-      <div class="section-split">
+      <section id="arsenal" class="wrap section arsenal-layout">
         <div>
-          <div class="section-heading left">
-            <p>3D Arsenal Showcase</p>
-            <h2>Static hosting. Real model rendering.</h2>
+          <div class="section-head compact">
+            <h2>Arsenal</h2>
+            <p>Pick an item to preview.</p>
           </div>
-          <p class="muted">
-            This GitHub Pages build has no backend. The weapon viewer reads the included Minecraft JSON and PNG files directly in the browser and renders them with Three.js.
-          </p>
-
-          <div class="weapon-list" id="weapon-list"></div>
+          <div id="weapon-list" class="weapon-list"></div>
         </div>
-
         <div class="viewer-card">
-          <div class="viewer-top">
+          <div class="viewer-head">
             <div>
-              <p class="mini-label">Featured Weapon</p>
-              <h3 id="weapon-name">AK-47</h3>
-              <p id="weapon-meta" class="muted small">Assault Rifle • Black Market</p>
+              <div class="viewer-kicker">3D Viewer</div>
+              <h3 id="viewer-title">AK-47</h3>
             </div>
-            <span class="status-dot">Interactive 3D</span>
+            <div id="viewer-meta" class="viewer-meta">Assault Rifle</div>
           </div>
-          <div id="viewer"></div>
-          <div class="viewer-note" id="viewer-note"></div>
+          <div id="viewer" class="viewer-canvas"></div>
+          <div id="viewer-status" class="viewer-status">Loading model…</div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="action" class="section">
-      <div class="section-heading">
-        <p>Cinematic Gallery</p>
-        <h2>Action-shot sections ready for the homepage.</h2>
-      </div>
-      <div class="action-grid">
-        <article class="action-card">
-          <img src="images/underblock-action-gang-war.png" alt="Gang war action shot" />
-          <div class="action-copy">
-            <h3>Downtown Gang War</h3>
-            <p>Tracer fire, alley ambushes, and brutal close-quarters combat.</p>
-          </div>
+      <section class="wrap section promo-grid">
+        <article class="promo-card">
+          <span class="promo-label">Vehicles</span>
+          <h3>Street chases</h3>
         </article>
-        <article class="action-card">
-          <img src="images/underblock-action-vehicle-chase.png" alt="Vehicle chase action shot" />
-          <div class="action-copy">
-            <h3>High-Speed Pursuit</h3>
-            <p>Custom vehicles tearing through the city while bounty hunters close in.</p>
-          </div>
+        <article class="promo-card">
+          <span class="promo-label">Bounties</span>
+          <h3>Target hunts</h3>
         </article>
-        <article class="action-card">
-          <img src="images/underblock-action-katana-duel.png" alt="Katana duel action shot" />
-          <div class="action-copy">
-            <h3>Legendary Blade Duel</h3>
-            <p>Rare katanas clash in the middle of a high-stakes raid.</p>
-          </div>
+        <article class="promo-card">
+          <span class="promo-label">Gangs</span>
+          <h3>Turf wars</h3>
         </article>
-      </div>
-    </section>
+      </section>
 
-    <section id="join" class="section join-section">
-      <div class="join-card">
-        <p>Deploy-Ready Static Site</p>
-        <h2>Upload to GitHub Pages and you're live.</h2>
-        <p class="muted">
-          No backend required. The website is fully static and includes the resource-pack files needed for the featured weapon viewer.
-        </p>
-        <div class="join-box">
-          <span>Server IP</span>
-          <strong>play.underblockmc.net</strong>
+      <section id="join" class="wrap section join-card">
+        <div>
+          <h2>Join now</h2>
+          <p>play.underblockmc.net</p>
         </div>
-        <div class="join-box">
-          <span>Version</span>
-          <strong>1.21.10</strong>
-        </div>
-      </div>
-    </section>
-  </main>
+        <button class="copy-ip large" data-copy="play.underblockmc.net">Copy IP</button>
+      </section>
+    </main>
 
-  <footer class="site-footer">
-    <p>Server administration contact: admin@underblockmc.net</p>
-    <p>NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT. Minecraft is a trademark of Mojang AB.</p>
-  </footer>
+    <footer class="site-footer wrap">
+      <div>Contact: admin@underblockmc.net</div>
+      <div>Not an official Minecraft service. Not approved by or associated with Mojang or Microsoft.</div>
+    </footer>
+  </div>
 
   <script type="module" src="app.js"></script>
 </body>

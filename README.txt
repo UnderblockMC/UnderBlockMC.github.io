@@ -1,17 +1,14 @@
-# UnderBlockMC GitHub Pages upload
+Upload these files directly to the root of your GitHub Pages repository.
 
-## Upload
-Upload the contents of this folder to the root of your GitHub Pages repo.
+No backend is required.
 
-## Included
-- `index.html`
-- `styles.css`
-- `app.js`
-- `images/` with the hero image and three action-shot crops
-- `assets/` extracted from your uploaded weapon packs
+Files:
+- index.html
+- styles.css
+- app.js
+- assets/
 
-## Notes
-- This build is fully static and works on GitHub Pages.
-- No backend is required.
-- The 3D viewer reads your Minecraft JSON + PNG files directly in the browser.
-- The footer already includes the required contact and Mojang disclaimer.
+Notes:
+- The site uses Three.js from a CDN, so the 3D viewer works on GitHub Pages.
+- The hero poster is included in images/promo-poster.png, but it is not used anywhere by default.
+- Contact footer required by the Minecraft EULA is included.
